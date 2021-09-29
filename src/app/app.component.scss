@@ -1,0 +1,21 @@
+.nav {
+    justify-content: space-between;
+    max-height: 150px;
+    align-content: center;
+
+    &__logo {
+        width: 30%;
+    }
+
+    &__login {
+        justify-content: flex-end;
+        
+        .nav__btn {
+            margin-top: 40px;
+        }
+    }
+
+    &__btn {
+        align-self: center;
+    }
+}

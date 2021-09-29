@@ -1,0 +1,26 @@
+.Logo {
+    display: flex;
+    justify-content: center;
+
+    img {
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            width: 200px;
+            height: 200px;
+        }
+
+        width: 300px;
+        height: 300px;
+    }
+
+    &__home {
+        justify-content: flex-start;
+        float: left;
+        max-height: 130px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

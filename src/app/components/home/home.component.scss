@@ -1,0 +1,62 @@
+.User{
+    &__card{
+        display: flex;
+        flex-direction: column;
+
+        /* Smartphones (portrait and landscape) ----------- */
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+            margin: 15px;
+        }
+        /* iPads (portrait and landscape) ----------- */
+        @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            max-height: 300px;
+        }
+
+        /* Desktops and laptops ----------- */
+        @media only screen  and (min-width : 1224px) {
+            max-height: 300px;
+        }
+
+        img {
+            object-fit: cover;
+            width: 150px;
+            height: auto;
+            align-self: center;
+        }
+    }
+
+    &__url_card_header{
+        display: flex;
+        justify-content: space-between;
+
+        &--title {
+            color: #008DF3;
+            font-size: 36px;
+        }
+
+        &--delete {
+            img {
+                object-fit: cover;
+                max-width: 30px;
+                height: auto;
+            }
+        }
+    }
+    &__url_card_body{
+        &--name {
+            font-size: 18px;
+        }
+    }
+}
+
+.Url {
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        &--btn {
+            width: 222px;
+            align-self: flex-end;
+        }
+    }
+}

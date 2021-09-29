@@ -1,0 +1,45 @@
+<div class="row justify-content-md-center Login">
+    <app-logo></app-logo>
+  <form
+    [formGroup]="registerForm"
+    (ngSubmit)="onSubmitRegister()"
+    class="border rounded-lg p-5 shadow row Login__custom Login__custom--50 Login__custom--margin-bottom-100"
+  >
+    <h3>Signup</h3>
+    <div class="mb-3 from-group">
+      <label for="userName" class="form-label">{{ fullName }}</label>
+      <input
+        type="text"
+        formControlName="username"
+        class="form-control"
+        id="username"
+        aria-describedby="fullName"
+      />
+    </div>
+    <div class="mb-3 from-group">
+      <label for="email" class="form-label">{{ emailText }}</label>
+      <input
+        type="email"
+        formControlName="email"
+        class="form-control"
+        id="email"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="mb-3 from-group">
+      <label for="password" class="form-label">{{ PasswordText }}</label>
+      <input
+        type="password"
+        formControlName="password"
+        class="form-control"
+        id="userPassword"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary btn-md btn-block Login__btn--signup">
+      {{signup | uppercase}}
+    </button>
+    <div class="Login__signupNote">
+        <p>By Creating account You agree to the <a href="">Terms of use</a> and <a href="">Privacy Polycy</a></p>
+    </div>
+  </form>
+</div>

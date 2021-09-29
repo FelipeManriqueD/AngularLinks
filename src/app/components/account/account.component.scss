@@ -1,0 +1,46 @@
+.Login {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+
+    &__custom {
+        display: flex;
+        flex-direction: column;
+
+        &--80{
+            width: 80%;
+        }
+        &--50{
+            /* Smartphones (portrait and landscape) ----------- */
+            @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+                width: 100%;
+            }
+            /* iPads (portrait and landscape) ----------- */
+            @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+                width: 80%;
+            }
+            width: 50%;
+        }
+        &--padding-b-50{
+            padding-bottom: 150px !important;
+        }
+
+        &--margin-bottom-100 {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__signupNote {
+        width: 264px;
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    &__btn{
+        &--signup{
+            max-width: 366px;
+            margin: 0 auto;
+        }
+    }
+}
