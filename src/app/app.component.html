@@ -1,11 +1,3 @@
 <div class="container">
-    <nav class="nav" [ngClass]="{'nav__login': !user}">
-        <app-logo [userToken]="user.token" class="nav__logo" *ngIf="user"></app-logo>
-        <div class="nav__btn">
-            <button type="button" class="btn btn-outline-primary" (click)="logout()" *ngIf="user">{{btnActionLogout | uppercase}}</button>
-            <button type="button" class="btn btn-outline-primary" (click)="register()" *ngIf="!user && !userRegister">{{btnActionLogin | uppercase}}</button>
-            <button type="button" class="btn btn-outline-primary" (click)="login()" *ngIf="!user && userRegister">{{btnActionLogin | uppercase}}</button>
-        </div>
-    </nav>
     <router-outlet></router-outlet>
 </div>

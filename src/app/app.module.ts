@@ -24,7 +24,9 @@ import { AccountModule } from './components/account/account.module';
   exports: [
     
   ],
-  providers: [],
+  providers: [
+    {provide: 'googleTagManagerId',  useValue: 'GTM-KZSR6BM'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
