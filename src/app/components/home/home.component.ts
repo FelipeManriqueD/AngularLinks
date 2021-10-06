@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormGroup } from '@angular/forms';
 import { FormBuilder } from '@angular/forms';
 
-import { User, Link } from '../../models';
+import { User, Link } from '../../core/models';
 import { AuthService } from '../../auth';
 import { first } from 'rxjs/operators';
 

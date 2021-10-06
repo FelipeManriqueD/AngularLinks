@@ -3,7 +3,7 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 //import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 import { AuthService } from './auth';
-import { User } from './models';
+import { User } from './core/models';
 
 @Component({
     selector: 'app',

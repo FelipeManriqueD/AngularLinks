@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
 import { map, first, filter, find } from 'rxjs/operators';
 
-import {Link, User} from '../models';
+import {Link, User} from '../core/models';
 import { linkApi } from '../../API/api';
 
 @Injectable({

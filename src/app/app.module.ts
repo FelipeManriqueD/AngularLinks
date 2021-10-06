@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home';
 import { AccountModule } from './components/account/account.module';
+import { NavigationComponent } from './shared/navigation/navigation.component';
 
 @NgModule({
   declarations: [
